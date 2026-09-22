@@ -37,17 +37,32 @@ p{
     text-align:right;
 }
 
-.contenido{
-    galeria {
+.galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 16px;                            
 }
 
-.contenido img {
+.galeria img {
   width: 100%;       /* Ocupa todo el ancho de su columna */
   height: 250px;     /* Ajusta la altura a la que prefieras */
   object-fit: cover; /* Evita que las fotos se deformen o estiren */
   border-radius: 8px;/* Opcional: esquinas redondeadas */
 }
+
+li{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+}
+
+label{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+}
+
+.btn1{
+    height: 40px;
+    width: 100px;
 }
