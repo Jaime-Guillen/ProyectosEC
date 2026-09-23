@@ -12,7 +12,7 @@ h1{
 h2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     width: fit-content;
-    color:rgba(247, 117, 66, 0.998);
+    color:rgb(244, 105, 50);
     border-radius: 10px;
     font-size: 40px;
 }
@@ -44,10 +44,10 @@ p{
 }
 
 .galeria img {
-  width: 100%;       /* Ocupa todo el ancho de su columna */
-  height: 250px;     /* Ajusta la altura a la que prefieras */
-  object-fit: cover; /* Evita que las fotos se deformen o estiren */
-  border-radius: 8px;/* Opcional: esquinas redondeadas */
+  width: 100%;       
+  height: 250px;     
+  object-fit: cover; 
+  border-radius: 8px;
 }
 
 li{
@@ -64,5 +64,7 @@ label{
 
 .btn1{
     height: 40px;
-    width: 100px;
+    width: 140px;
 }
+
+

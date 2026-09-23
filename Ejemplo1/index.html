@@ -6,7 +6,7 @@
     <title>Agencia Jaime</title>
     <link rel="stylesheet" href="clases.css">
 
-    <button class="btn1">MODO OSCURO</button>
+    <input type="button" value="Modo Oscuro/Claro" class="btn1" onclick="modoOscuro()">
     <div>
     <h1>AGENCIA JAIME</h1>
     </div>
@@ -76,5 +76,54 @@
     </form>
 
     
+    <script>
+        function modoOscuro() {
+            var body = document.body;
+            var p = document.querySelectorAll("p");
+            var h1 = document.querySelectorAll("h1");
+            var h2 = document.querySelectorAll("h2");
+            var li = document.querySelectorAll("li");
+            var label = document.querySelectorAll("label");
+            if (body.style.backgroundColor === "black") {
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+                for (var i = 0; i < p.length; i++) {
+                    p[i].style.color = "black";
+                }
+                for (var i = 0; i < h1.length; i++) {
+                    h1[i].style.color = "rgba(247, 117, 66, 0.998)";
+                }
+                for (var i = 0; i < h2.length; i++) {
+                    h2[i].style.color = "rgba(247, 117, 66, 0.998)";
+                }
+                for (var i = 0; i < li.length; i++) {
+                    li[i].style.color = "black";
+                }
+                for (var i = 0; i < label.length; i++) {
+                    label[i].style.color = "black";
+                }
+            } else {
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+                for (var i = 0; i < p.length; i++) {
+                    p[i].style.color = "white";
+                }
+                for (var i = 0; i < h1.length; i++) {
+                    h1[i].style.color = "rgb(246, 248, 114)";
+                }
+                for (var i = 0; i < h2.length; i++) {
+                    h2[i].style.color = "rgb(246, 248, 114)";
+                }
+                for (var i = 0; i < li.length; i++) {
+                    li[i].style.color = "white";
+                }
+                for (var i = 0; i < label.length; i++) {
+                    label[i].style.color = "white";
+                }
+            }
+
+        }
+    </script>
+
 </body>
 </html>
